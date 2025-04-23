@@ -1,7 +1,7 @@
 # Example Java SDK version 0.1
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
-![JDK](https://img.shields.io/badge/jdk-11+-blue)
+![JDK](https://img.shields.io/badge/jdk-17+-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-alpha-orange)
 
@@ -47,6 +47,6 @@ ExampleRspDto response = client.getExample();
 ```
 
 ## Requirements
-- Java 11+
+- Java 17+
 - Gradle 7+
 
