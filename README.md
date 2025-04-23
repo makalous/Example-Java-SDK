@@ -31,7 +31,7 @@ implementation files('libs/ExampleSdk-0.1.jar')
 ```
 - Create client:
 ```java
-ExampleClient client = new ExampleClient("https://your-api.com");
+ExampleClient client = new ExampleClient("https://your-api-host.com");
 ````
 - Get response:
 ```java
