@@ -15,6 +15,8 @@ import java.net.http.HttpResponse;
 public class ExampleClient {
     private final static String EP_PATH = "/api/get/example";
     private final HttpClient httpClient = HttpClient.newHttpClient();
+
+    private final ObjectMapper objectMapper = new ObjectMapper();
     private final String baseUrl;
 
     public ExampleClient(final String baseUrl) {
@@ -32,7 +34,7 @@ public class ExampleClient {
                 throw new RuntimeException(String.format("API %s returned status: %d",
                         EP_PATH, response.statusCode()));
             }
-            return new ObjectMapper().readValue(response.body(), ExampleRspDto.class);
+            return objectMapper.readValue(response.body(), ExampleRspDto.class);
         } catch (IOException | InterruptedException e) {
             throw new RuntimeException(String.format("API %s failed: %s",
                     EP_PATH, e.getMessage()));

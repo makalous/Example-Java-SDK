@@ -1,4 +1,10 @@
 # Example Java SDK version 0.1
+
+![Build](https://img.shields.io/badge/build-passing-brightgreen)
+![JDK](https://img.shields.io/badge/jdk-11+-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-alpha-orange)
+
 A lightweight Java SDK for consuming the Example API 
 ```java
 "/api/get/example"
